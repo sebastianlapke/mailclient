@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <title>Email sended</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Your Email is sended!</h1>
+<p th:text="'Recipient:' + ${email.recipient}" />
+<p th:text="'Subject: ' + ${email.subject}" />
+<p th:text="'Content: ' + ${email.content}" />
+<a href="/email">Send another Email</a>
+</body>
+</html>
